@@ -10,11 +10,11 @@ import androidFrameworkDesign.TestUtils.AndroidBaseTest;
 
 public class eCommerce_tc_01 extends AndroidBaseTest {
 	
-	/*
-	 * @BeforeMethod public void preSetup() {
-	 * 
-	 * formPage.setActivity(); }
-	 */
+	
+	  @BeforeMethod public void preSetup() {
+	  
+	  formPage.setActivity(); }
+	 
 
 	@Test
 	public void FillForm_ErrorValidationTest() {
