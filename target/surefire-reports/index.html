@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-skipped">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Khadhar\eclipse-workspace\AppiumFrameworkDesign\testNGSuites\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="androidFrameworkDesign.eCommerce_tc_4" class="method navigator-link" hash-for-method="AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Khadar, country=Congo, gender=female})">AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Khadar, country=Congo, gender=female})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="androidFrameworkDesign.eCommerce_tc_4" class="method navigator-link" hash-for-method="AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Nasir Ahmed, country=India, gender=male})">AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Nasir Ahmed, country=India, gender=male})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="androidFrameworkDesign.eCommerce_tc_01" class="method navigator-link" hash-for-method="FillForm_ErrorValidationTest">FillForm_ErrorValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="androidFrameworkDesign.eCommerce_tc_01" class="method navigator-link" hash-for-method="FillForm_PositiveFlowTest">FillForm_PositiveFlowTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">androidFrameworkDesign.eCommerce_tc_01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FillForm_ErrorValidationTest">
+                  </a> <!-- FillForm_ErrorValidationTest -->
+                  <span class="method-name">FillForm_ErrorValidationTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e647305a-ddb0-4a2a-8315-d70a17ba5f94, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e647305a-ddb0-4a2a-8315-d70a17ba5f94
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_01.preSetup(eCommerce_tc_01.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FillForm_PositiveFlowTest">
+                  </a> <!-- FillForm_PositiveFlowTest -->
+                  <span class="method-name">FillForm_PositiveFlowTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e647305a-ddb0-4a2a-8315-d70a17ba5f94, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e647305a-ddb0-4a2a-8315-d70a17ba5f94
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_01.preSetup(eCommerce_tc_01.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">androidFrameworkDesign.eCommerce_tc_4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Khadar, country=Congo, gender=female})">
+                  </a> <!-- AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Khadar, country=Congo, gender=female}) -->
+                  <span class="method-name">AddMultipleProductsToCartAndVerifyBrowserNavigation</span>
+                  <span class="parameters">({name=Khadar, country=Congo, gender=female})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ae7df2b-f0a9-416d-8b80-ec56196ce574, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ae7df2b-f0a9-416d-8b80-ec56196ce574
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_4.preSetup(eCommerce_tc_4.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Nasir Ahmed, country=India, gender=male})">
+                  </a> <!-- AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Nasir Ahmed, country=India, gender=male}) -->
+                  <span class="method-name">AddMultipleProductsToCartAndVerifyBrowserNavigation</span>
+                  <span class="parameters">({name=Nasir Ahmed, country=India, gender=male})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ae7df2b-f0a9-416d-8b80-ec56196ce574, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ae7df2b-f0a9-416d-8b80-ec56196ce574
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_4.preSetup(eCommerce_tc_4.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Khadhar\eclipse-workspace\AppiumFrameworkDesign\testNGSuites\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;androidFrameworkDesign.TestUtils.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;End End to Framework Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;androidFrameworkDesign.eCommerce_tc_4&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- End End to Framework Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Error Validation Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;androidFrameworkDesign.eCommerce_tc_01&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Error Validation Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">End End to Framework Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Error Validation Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AddMultipleProductsToCartAndVerifyBrowserNavigation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AddMultipleProductsToCartAndVerifyBrowserNavigation')
+data.setCell(0, 2, 'androidFrameworkDesign.eCommerce_tc_4')
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddMultipleProductsToCartAndVerifyBrowserNavigation')
+data.setCell(1, 2, 'androidFrameworkDesign.eCommerce_tc_4')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'FillForm_ErrorValidationTest')
+data.setCell(2, 2, 'androidFrameworkDesign.eCommerce_tc_01')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'FillForm_PositiveFlowTest')
+data.setCell(3, 2, 'androidFrameworkDesign.eCommerce_tc_01')
+data.setCell(3, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">androidFrameworkDesign.eCommerce_tc_4</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">ConfigureAppium</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">preSetup</span>
+                <span class="method-start">29077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Nasir Ahmed, country=India, gender=male})</span>
+                <span class="method-start">29731 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">preSetup</span>
+                <span class="method-start">29764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddMultipleProductsToCartAndVerifyBrowserNavigation({name=Khadar, country=Congo, gender=female})</span>
+                <span class="method-start">30250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30257 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">androidFrameworkDesign.eCommerce_tc_01</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">ConfigureAppium</span>
+                <span class="method-start">30994 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">preSetup</span>
+                <span class="method-start">41156 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FillForm_ErrorValidationTest</span>
+                <span class="method-start">41702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">preSetup</span>
+                <span class="method-start">41703 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FillForm_PositiveFlowTest</span>
+                <span class="method-start">41704 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41705 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

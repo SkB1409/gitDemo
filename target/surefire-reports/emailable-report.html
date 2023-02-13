@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">End End to Framework Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">30,436</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Error Validation Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">10,712</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">4</th><th class="num">0</th><th class="num">0</th><th class="num">41,148</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">End End to Framework Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">androidFrameworkDesign.eCommerce_tc_4</td><td><a href="#m0">preSetup</a></td><td rowspan="2">1675926378567</td><td rowspan="2">637</td></tr><tr class="failedeven"><td><a href="#m1">preSetup</a></td></tr><tr><th colspan="4">End End to Framework Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">androidFrameworkDesign.eCommerce_tc_4</td><td><a href="#m2">tearDown</a></td><td rowspan="1">1675926379747</td><td rowspan="1">0</td></tr><tr><th colspan="4">End End to Framework Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">androidFrameworkDesign.eCommerce_tc_4</td><td><a href="#m3">AddMultipleProductsToCartAndVerifyBrowserNavigation</a></td><td rowspan="2">1675926379740</td><td rowspan="2">1</td></tr><tr class="skippedeven"><td><a href="#m4">AddMultipleProductsToCartAndVerifyBrowserNavigation</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Error Validation Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">androidFrameworkDesign.eCommerce_tc_01</td><td><a href="#m5">preSetup</a></td><td rowspan="1">1675926390646</td><td rowspan="1">544</td></tr><tr><th colspan="4">Error Validation Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">androidFrameworkDesign.eCommerce_tc_01</td><td><a href="#m6">preSetup</a></td><td rowspan="1">1675926391193</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">tearDown</a></td><td rowspan="1">1675926391195</td><td rowspan="1">0</td></tr><tr><th colspan="4">Error Validation Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">androidFrameworkDesign.eCommerce_tc_01</td><td><a href="#m8">FillForm_ErrorValidationTest</a></td><td rowspan="1">1675926391192</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">FillForm_PositiveFlowTest</a></td><td rowspan="1">1675926391194</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>End End to Framework Test</h2><h3 id="m0">androidFrameworkDesign.eCommerce_tc_4#preSetup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ae7df2b-f0a9-416d-8b80-ec56196ce574, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ae7df2b-f0a9-416d-8b80-ec56196ce574
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_4.preSetup(eCommerce_tc_4.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">androidFrameworkDesign.eCommerce_tc_4#preSetup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7711, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7711, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ae7df2b-f0a9-416d-8b80-ec56196ce574, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ae7df2b-f0a9-416d-8b80-ec56196ce574
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_4.preSetup(eCommerce_tc_4.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">androidFrameworkDesign.eCommerce_tc_4#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">androidFrameworkDesign.eCommerce_tc_4#AddMultipleProductsToCartAndVerifyBrowserNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{name=Khadar, country=Congo, gender=female}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ae7df2b-f0a9-416d-8b80-ec56196ce574, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ae7df2b-f0a9-416d-8b80-ec56196ce574
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_4.preSetup(eCommerce_tc_4.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">androidFrameworkDesign.eCommerce_tc_4#AddMultipleProductsToCartAndVerifyBrowserNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{name=Nasir Ahmed, country=India, gender=male}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7696, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3ae7df2b-f0a9-416d-8b80-ec56196ce574, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3ae7df2b-f0a9-416d-8b80-ec56196ce574
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_4.preSetup(eCommerce_tc_4.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Error Validation Test</h2><h3 id="m5">androidFrameworkDesign.eCommerce_tc_01#preSetup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e647305a-ddb0-4a2a-8315-d70a17ba5f94, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e647305a-ddb0-4a2a-8315-d70a17ba5f94
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_01.preSetup(eCommerce_tc_01.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">androidFrameworkDesign.eCommerce_tc_01#preSetup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">androidFrameworkDesign.eCommerce_tc_01#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">androidFrameworkDesign.eCommerce_tc_01#FillForm_ErrorValidationTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e647305a-ddb0-4a2a-8315-d70a17ba5f94, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e647305a-ddb0-4a2a-8315-d70a17ba5f94
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_01.preSetup(eCommerce_tc_01.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">androidFrameworkDesign.eCommerce_tc_01#FillForm_PositiveFlowTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;&apos;com.androidsample.generalstore&apos;&apos; application. Consider checking the driver&apos;s troubleshooting documentation. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Khadhar\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s b043aa38 shell am start -W -n &quot;&apos;com.androidsample.generalstore&apos;/&apos;com.androidsample.generalstore.MainActivity&apos;&quot; -S&apos; exited with code 255&apos;; Command output: Security exception: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+
+java.lang.SecurityException: Permission Denial: starting Intent { flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7974, uid=2000) not exported from uid 10120
+	at com.android.server.wm.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1110)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:919)
+	at com.android.server.wm.ActivityStarter.startActivity(ActivityStarter.java:628)
+	at com.android.server.wm.ActivityStarter.startActivityMayWait(ActivityStarter.java:1495)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:553)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1294)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3880)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:518)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:177)
+	at android.os.ShellCommand.exec(ShellCommand.java:104)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10843)
+	at android.os.Binder.shellCommand(Binder.java:892)
+	at android.os.Binder.onTransact(Binder.java:776)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4575)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3017)
+	at android.os.Binder.execTransactInternal(Binder.java:1032)
+	at android.os.Binder.execTransact(Binder.java:1005)
+
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e647305a-ddb0-4a2a-8315-d70a17ba5f94, startActivity {appPackage=&apos;com.androidsample.generalstore&apos;, appActivity=&apos;com.androidsample.generalstore.MainActivity&apos;, appWaitPackage=, appWaitActivity=, dontStopAppOnReset=false, intentAction=, intentCategory=, intentFlags=, optionalIntentArguments=}]
+Capabilities {appium:app: C:\Users\Khadhar\eclipse-wo..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//Khadhar//Downloa..., appium:databaseEnabled: false, appium:desired: {app: C:\Users\Khadhar\eclipse-wo..., automationName: UIAutomator2, chromedriverExecutable: C://Users//Khadhar//Downloa..., deviceName: OnePlus ONEPLUS A5000, platformName: android}, appium:deviceApiLevel: 29, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A5000, appium:deviceName: b043aa38, appium:deviceScreenDensity: 380, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: b043aa38, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.375, appium:platformVersion: 10, appium:statBarHeight: 57, appium:takesScreenshot: true, appium:viewportRect: {height: 1863, left: 0, top: 57, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e647305a-ddb0-4a2a-8315-d70a17ba5f94
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:267)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+	at com.frameworkdesign.pageobjects.android.FormPage.setActivity(FormPage.java:54)
+	at androidFrameworkDesign.eCommerce_tc_01.preSetup(eCommerce_tc_01.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
