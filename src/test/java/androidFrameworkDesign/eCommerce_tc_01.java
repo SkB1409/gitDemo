@@ -57,4 +57,10 @@ public class eCommerce_tc_01 extends AndroidBaseTest {
 		System.out.println("Hello World 007");
 		
 	}
+	@Test
+	public void dummy03() {
+		
+		System.out.println("Hello World 007");
+		
+	}
 }
