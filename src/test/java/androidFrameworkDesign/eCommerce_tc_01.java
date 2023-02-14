@@ -27,7 +27,8 @@ public class eCommerce_tc_01 extends AndroidBaseTest {
 		String toastMessage = formPage.getToastMessage();
 		System.out.println("Error message displayed is: " + toastMessage);
 		Assert.assertEquals(toastMessage, "Please enter your name");
-	
+		System.out.println("Error message displayed is not dispalyed");
+
 	}
 
 	
@@ -42,5 +43,18 @@ public class eCommerce_tc_01 extends AndroidBaseTest {
 
 		
 		//Assert.assertTrue(formPage.getToastMessages().size()<1);
+	}
+	
+	@Test
+	public void dummy01() {
+		System.out.println("Hello World 001");
+		
+	}
+	
+	@Test
+	public void dummy02() {
+		
+		System.out.println("Hello World 007");
+		
 	}
 }
